@@ -1,0 +1,25 @@
+1/ template engine: viet file html o nhung noi khac 
+
+2/ "trang hien thi: lay layout {{header, footer lay o main.hbs}}, {{body}} lay o home.hbds"
+
+3/ nodemon.js them mo rong duoi scss {extension} khi chay npm start 
+--------------
+	D:\5.F8>npm start
+
+	> 5.f8@1.0.0 start D:\5.F8
+	> nodemon --inspect src/index.js
+
+	[nodemon] 2.0.6
+	[nodemon] to restart at any time, enter `rs`
+	[nodemon] watching path(s): *.*
+	[nodemon] watching extensions: js,mjs,json
+	[nodemon] starting `node --inspect src/index.js`
+
+--------------
+
+	D:\5.F8>npm start
+	.....
+	[nodemon] watching extensions: js,mjs,json
+
+
+4/ node sass : de chuyen file thanh css 
