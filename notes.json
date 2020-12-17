@@ -1,3 +1,6 @@
+hoc toi phan 16.https://fullstack.edu.vn/learning/nodejs/nodejs-use-bootstrap
+
+=========
 1/ template engine: viet file html o nhung noi khac 
 
 2/ "trang hien thi: lay layout {{header, footer lay o main.hbs}}, {{body}} lay o home.hbds"
@@ -23,3 +26,4 @@
 
 
 4/ node sass : de chuyen file thanh css 
+5/ .gitignore de ko sync du lieu len git

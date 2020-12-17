@@ -4,9 +4,12 @@ const morgan = require('morgan');
 const handlebars = require('express-handlebars');
 const app = express();
 const port = 3000;
-// '/'rute: tuyen duong
-	// var b = 3;
-	// var c = a + b;
+
+const route = require('./routes');
+
+app.use(express.urlencoded())
+app.use(express.json())
+
 	
 //Add anh vao trang home page
 app.use(express.static(path.join(__dirname,'public')));
@@ -21,16 +24,10 @@ app.engine('hbs', handlebars({
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources/views'));
 
-console.log('PATH:', path.join(__dirname, 'resources/views'));
-app.get('/', (req, res) =>{
-	res.render('home');
-});
+//Route init
+route (app);
 
-app.get('/news', (req, res) =>{
-	res.render('news');
-});
-	
-
+//console.log('PATH:', path.join(__dirname, 'resources/views'));
 
 //127.0.0.1 - localhost
 app.listen(port, () => {console.log(`Example app listening at http://localhost:${port}`)})
